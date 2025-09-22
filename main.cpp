@@ -1,7 +1,14 @@
 #include <iostream>
 
-#include "src/hello.hpp"
+#include "src/increment.hpp"
 
 int main() {
-  // Your driver program goes here
+    int number{};
+    std::cout << "Enter a number: " << std::endl;
+    std::cin >> number;
+
+    std::cout << valueIncrement(number) << std::endl;
+
+    referenceIncrement(number);
+    std::cout << number << std::endl;
 }
